@@ -10,7 +10,7 @@ const Success = () => {
    
           <div className="grid place-items-center p-20">
 
-           <FontAwesomeIcon icon={faCheckCircle} className="text-[7em] text-green-500"/>
+           <FontAwesomeIcon icon={faCheckCircle} className="text-[7em] lg:text-[13em] text-green-500"/>
           
           </div>
 
