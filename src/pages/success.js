@@ -1,3 +1,5 @@
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppContext } from "context/AppContext";
 
 const Success = () => {
@@ -5,12 +7,14 @@ const Success = () => {
     const { clearCart } = useAppContext()
 
   return <>
-          <div clas>
+   
+          <div className="grid place-items-center p-20">
 
-          Success
+           <FontAwesomeIcon icon={faCheckCircle} className="text-[7em] text-green-500"/>
           
           </div>
-          </>;
+
+          </>
 }
 
 export default Success

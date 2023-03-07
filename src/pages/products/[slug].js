@@ -12,7 +12,14 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
   const [ index, setIndex ] = useState(0);
 
-  const { increaseQuantity, decreaseQuantity, quantity, addToCart } = useAppContext()
+  const { increaseQuantity, decreaseQuantity, quantity, addToCart, handleToggle } = useAppContext()
+
+  const buyNow = () => {
+
+    addToCart(product, quantity)
+    handleToggle()
+
+  }
 
     return <>
   
@@ -71,9 +78,9 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
                 <div className="flex gap-2">
 
-                <Button clickEvent={() => addToCart(product, quantity)} modifier="btn" text="Add to cart" icon={faCartPlus} />
+                <Button clickEvent={() => addToCart(product, quantity) } modifier="btn" text="Add to cart" icon={faCartPlus} />
           
-                <Button modifier="btn" text="Buy now" icon={faArrowAltCircleRight}/>
+                <Button clickEvent={buyNow} modifier="btn" text="Buy now" icon={faArrowAltCircleRight}/>
                 
                 </div>
 
