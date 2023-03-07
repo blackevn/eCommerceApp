@@ -3,7 +3,7 @@ import Button from "./Button";
 import { useAppContext } from "context/AppContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { urlFor } from "lib/sanityClient";
-import { getStripe } from "lib/getStripe";
+import  getStripe  from "lib/getStripe";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
