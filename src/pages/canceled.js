@@ -13,7 +13,7 @@ const Cancel = () => {
 
             <FontAwesomeIcon icon={faXmarkCircle} className="text-[7em] lg:text-[13em] text-red-500"/>
 
-            <div className="text-3xl font-bold">Purchase was not successful</div>
+            <div className="text-3xl font-bold text-center">Purchase was not successful</div>
 
             <div className="font-bold text-2xl">Something went wrong</div>
 
