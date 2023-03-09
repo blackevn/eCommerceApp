@@ -23,7 +23,7 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
     return <>
   
-    <div className="bg-base-100 dark:bg-gray-800 text-gray-600 dark:text-gray-200">
+    <div className="bg-base-100 dark:bg-gray-800 text-gray-600 dark:text-gray-200 ">
 
         <div className="max-h-fit w-screen bg-base-100 dark:bg-gray-800 grid place-items-center text-gray-600 dark:text-gray-200 p-6">
 
@@ -57,7 +57,7 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
                 <p className="text-2xl font-medium">{name}</p>  
 
-                <p>{details}</p>
+                <p className="pr-4 lg:p-0">{details}</p>
 
                 <div className="flex-col flex justify-between">
                   
