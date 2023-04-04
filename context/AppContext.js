@@ -3,8 +3,6 @@ import { toast } from "react-hot-toast";
 
 const AppStateContext = createContext()
 
-
-
 export const AppContext = ( { children, product: singleProduct } ) => {
 
   
@@ -18,13 +16,6 @@ export const AppContext = ( { children, product: singleProduct } ) => {
   const [ totalQuantities, setTotalQuantities ] = useState(0)
   const [ quantity, setQuantity ] = useState(1)
 
-  useEffect(() => {
-          
-    localStorage.setItem("cartItems", JSON.stringify(cartItems))
-    localStorage.setItem("totalQuantities", JSON.stringify(totalQuantities))
-    localStorage.setItem("totalPrice", JSON.stringify(totalPrice))
-  
-  }, []); 
 
  
   useEffect(() => {
