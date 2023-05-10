@@ -81,29 +81,21 @@ const responsive = {
 
                             </div>
 
-                            <div className="w-full md:w-[50%] h-full grid place-items-center ">
-
-                              <div className="space-y-4 w-full grid place-items-center">
-
-                                <div className="space-y-4">
-
-                                <h1 className="headerProductName">{ban.product}</h1>
-
-                                <p className="w-full sm:max-w-md text-xl text-gray-400 font-bold">Nulla aliquip esse nulla officia. Sunt ad cillum irure officia elit exercitation veniam. </p>
-                             
-                                <Button icon={faArrowCircleRight} text={ban.buttonText} modifier="btn"/>
-
-                                </div>
-                           
-                              </div>
-                        
-                            </div>
-                        
-                            <div className="grid place-items-center h-full w-full md:w-[50%] p-8">
+                           <div className="grid place-items-center h-full w-full md:w-[50%] p-8">
                          
-                             <img className="max-h-[500px]" src={urlFor(ban.image)} alt={ban.product} />
+                             <img className="max-h-[400px]" src={urlFor(ban.image)} alt={ban.product} />
                         
                             </div>
+
+                            <div className="grid place-items-center ">
+
+                            <div className="w-[80%] lg:p-14 space-y-4">
+                             <h1 className="headerProductName">{ban.product}</h1> 
+                            <p className="text-md lg:text-xl">Tempor amet eu veniam veniam excepteur sit ex elit ex. Eu occaecat labore et consequat. Exercitation aliquip sint aute aliqua aute quis nisi anim aliqua nisi.</p>
+                            <Button modifier="btn" icon={faArrowCircleRight} text={ban.buttonText}/>
+                            </div>
+                            </div>
+
                        
                           </div>
                    

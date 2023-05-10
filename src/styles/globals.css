@@ -23,8 +23,7 @@ body{
 
 .header{
 
-    @apply rounded-3xl w-full relative overflow-hidden shadow-lg min-h-[600px] max-h-[700px]
-           lg:flex-row md:justify-between md:items-center p-8 flex flex-col-reverse 
+    @apply flex items-center md:p-12 lg:flex-row-reverse flex-col
 
 }
 

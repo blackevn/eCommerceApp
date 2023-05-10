@@ -3,7 +3,7 @@ import { client } from "lib/sanityClient";
 
 const index = ({product, banner}) => {
   return <>
-            <div className="box-border w-screen ">
+            <div className="box-border w-screen">
 
               <Header banner={banner}/>
 
