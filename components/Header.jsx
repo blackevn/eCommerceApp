@@ -81,7 +81,7 @@ const responsive = {
 
                             </div>
 
-                           <div className="grid place-items-center h-full w-full md:w-[50%] p-8">
+                           <div className="grid place-items-center h-full w-full md:w-[50%]">
                          
                              <img className="max-h-[400px]" src={urlFor(ban.image)} alt={ban.product} />
                         

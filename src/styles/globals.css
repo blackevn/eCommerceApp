@@ -23,7 +23,7 @@ body{
 
 .header{
 
-    @apply flex items-center md:p-12 lg:flex-row-reverse flex-col
+    @apply flex items-center md:p-12 lg:flex-row-reverse flex-col space-y-6
 
 }
 
