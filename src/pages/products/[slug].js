@@ -57,7 +57,7 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
                 <p className="text-2xl font-medium">{name}</p>  
 
-                <p className="pr-4 lg:p-0 lg:w-full">{details}</p>
+                <p className="pr-4 lg:p-0 w-[95%] lg:w-full">{details}</p>
 
                 <div className="flex-col flex justify-between">
                   

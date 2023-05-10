@@ -73,7 +73,7 @@ const responsive = {
                    {banner.map(ban => (
 
                
-                          <div key={ban._id} className={`header`} >
+                          <div key={ban._id} className={`flex items-center md:p-12 lg:flex-row-reverse flex-col space-y-6 justify-between`} >
 
                             <div className="bannerBG">
 
@@ -83,7 +83,7 @@ const responsive = {
 
                            <div className="grid place-items-center h-full w-full md:w-[50%]">
                          
-                             <img className="max-h-[400px]" src={urlFor(ban.image)} alt={ban.product} />
+                             <img className="max-h-[300px]  max-w-[200px] lg:max-h-[400px]" src={urlFor(ban.image)} alt={ban.product} />
                         
                             </div>
 
