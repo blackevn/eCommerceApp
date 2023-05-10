@@ -7,7 +7,7 @@ import  getStripe  from "lib/getStripe";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
-export const Cart = () => {
+const Cart = () => {
 
   const {adjustItemQuantity,
          handleToggle, 
@@ -158,5 +158,7 @@ const [ stripeData, setStripeData ] = useState("")
 
   </>
 };
+
+export default Cart
 
 
