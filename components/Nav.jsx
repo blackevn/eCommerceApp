@@ -29,7 +29,7 @@ const Nav = ({ toggle }) => {
 
       <Link href="/"><div className="text-3xl font-black text-black dark:text-white"><p className="m-0 p-0">iFeel</p></div></Link>
 
-      <Link href="/categories/1">Categories</Link>
+      {/* <Link href="/categories/1">Categories</Link> */}
 
       <div className="flex gap-8 items-center">
 

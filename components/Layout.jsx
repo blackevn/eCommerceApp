@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Nav from "./Nav";
-import { Cart } from "./Cart";
+import Cart from "./Cart";
 import { useAppContext } from "context/AppContext";
 import { Toaster } from 'react-hot-toast';
 

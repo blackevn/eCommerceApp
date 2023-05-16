@@ -17,7 +17,15 @@ export const AppContext = ( { children, product: singleProduct } ) => {
   const [ quantity, setQuantity ] = useState(1)
 
 
- 
+  useEffect(() => {
+          
+    localStorage.setItem("cartItems", JSON.stringify(cartItems))
+    localStorage.setItem("totalQuantities", JSON.stringify(totalQuantities))
+    localStorage.setItem("totalPrice", JSON.stringify(totalPrice))
+  
+  }, [cartItems]); 
+
+  
   useEffect(() => {
          
     const cartItems = JSON.parse(localStorage.getItem("cartItems"))
@@ -29,15 +37,6 @@ export const AppContext = ( { children, product: singleProduct } ) => {
     setCartItems(cartItems)
 
   }, []);
-
-
-  useEffect(() => {
-          
-    localStorage.setItem("cartItems", JSON.stringify(cartItems))
-    localStorage.setItem("totalQuantities", JSON.stringify(totalQuantities))
-    localStorage.setItem("totalPrice", JSON.stringify(totalPrice))
-  
-  }, [cartItems]); 
 
  
   const handleToggle = () => {

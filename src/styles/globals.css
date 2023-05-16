@@ -21,13 +21,6 @@ body{
 
 }
 
-.header{
-
-    @apply rounded-3xl w-full relative overflow-hidden shadow-lg min-h-[600px] max-h-[700px]
-           lg:flex-row md:justify-between md:items-center p-8 flex flex-col-reverse 
-
-}
-
 .headerProductName{
 
     @apply text-3xl font-black bg-clip-text text-transparent 

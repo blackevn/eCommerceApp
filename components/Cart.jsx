@@ -7,7 +7,7 @@ import  getStripe  from "lib/getStripe";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
-export const Cart = () => {
+const Cart = () => {
 
   const {adjustItemQuantity,
          handleToggle, 
@@ -21,6 +21,8 @@ const [ stripeData, setStripeData ] = useState("")
 
 
   const handleCheckout = async () => {
+
+    toast.loading("Please wait...")
 
     const stripe = await getStripe()
 
@@ -37,11 +39,11 @@ const [ stripeData, setStripeData ] = useState("")
 
     })
 
+  
     if (response?.statusCode === 500) return
 
     const data = await response?.json()
 
-    toast.loading("Please wait...")
 
     if(!data) {
 
@@ -156,5 +158,7 @@ const [ stripeData, setStripeData ] = useState("")
 
   </>
 };
+
+export default Cart
 
 

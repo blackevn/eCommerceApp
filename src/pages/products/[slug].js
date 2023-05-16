@@ -23,7 +23,7 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
     return <>
   
-    <div className="bg-base-100 dark:bg-gray-800 text-gray-600 dark:text-gray-200 ">
+    <div className="bg-base-100 dark:bg-gray-800 text-gray-600 dark:text-gray-200 box-border">
 
         <div className="max-h-fit w-screen bg-base-100 dark:bg-gray-800 grid place-items-center text-gray-600 dark:text-gray-200 p-6">
 
@@ -53,11 +53,11 @@ const ProductsDetails = ({ product: { image, name, details, price }, products, p
 
             </div>
 
-            <div className="w-[400px] grid justify-between min-h-full space-y-6">
+            <div className="w-[400px] grid justify-between min-h-full space-y-4">
 
                 <p className="text-2xl font-medium">{name}</p>  
 
-                <p className="pr-4 lg:p-0">{details}</p>
+                <p className="pr-4 lg:p-0 w-[95%] lg:w-full">{details}</p>
 
                 <div className="flex-col flex justify-between">
                   
